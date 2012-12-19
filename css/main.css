@@ -1,0 +1,797 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+:focus {
+  outline: none;
+}
+::-moz-selection {
+  background: #45b1df;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #45b1df;
+  color: #fff;
+  text-shadow: none;
+}
+/* =============================================================================
+   BEGIN PARAGRAPHS
+   ========================================================================== */p {
+  margin: 0 0 .5em;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+/* =============================================================================
+   END PARAGRAPHS
+   ========================================================================== */
+/* =============================================================================
+   BEGIN INLINE ELEMENTS
+   ========================================================================== */b,
+strong {
+  font-weight: bold;
+}
+i,
+em {
+  font-style: italic;
+}
+s,
+strike,
+del {
+  text-decoration: line-through;
+}
+cite {
+  font-style: normal;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+small {
+  font-size: 80%;
+}
+ins,
+mark {
+  background-color: #ffee55;
+  color: #000;
+  text-decoration: none;
+}
+code,
+kbd,
+samp {
+  font-size: 90%;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+code {
+  padding: 2px 3px;
+  display: inline-block;
+  line-height: 1;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+}
+kbd {
+  padding: 0 6px;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px #ffffff;
+  background-color: #fafafa;
+  border-color: #ccc #ccc #fff;
+  border-style: solid solid none;
+  border-width: 1px 1px medium;
+  color: #444;
+  font-weight: bold;
+  white-space: nowrap;
+}
+/* =============================================================================
+   END INLINE ELEMENTS
+   ========================================================================== */
+/* =============================================================================
+   BEGIN PREFORMATTED TEXT
+   ========================================================================== */pre {
+  font-size: 90%;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 1.5em;
+  white-space: pre;
+  overflow: auto;
+}
+/* =============================================================================
+   END PREFORMATTED TEXT
+   ========================================================================== */
+/* =============================================================================
+   BEGIN HEADINGS
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: .5em 0;
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+hgroup h1,
+hgroup h2,
+hgroup h3,
+hgroup h4 {
+  margin-bottom: .1em;
+}
+/* =============================================================================
+   END HEADINGS
+   ========================================================================== */
+/* =============================================================================
+   BEGIN LISTS
+   ========================================================================== */ul,
+ol {
+  margin: 0 0 1.25em;
+  padding: 0 0 0 15px;
+  list-style-position: inside;
+}
+ul ul,
+ol ol {
+  margin: 0;
+}
+ul {
+  list-style: square;
+}
+ol {
+  list-style: decimal;
+}
+/* =============================================================================
+   END LISTS
+   ========================================================================== */
+/* =============================================================================
+   BEGIN DEFINITIONS
+   ========================================================================== */dl {
+  margin: 0 0 1.25em;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 10px;
+}
+/* =============================================================================
+   END DEFINITIONS
+   ========================================================================== */
+/* =============================================================================
+   BEGIN BLOCKQUOTES
+   ========================================================================== */blockquote {
+  padding: 0 0 0 15px;
+  margin: 1.25em 0 0;
+  border-left: 5px solid #aaa;
+}
+blockquote p {
+  margin: 0;
+  font-size: 1.1666em;
+  /* 14px */
+
+  font-weight: normal;
+}
+blockquote small {
+  display: block;
+  color: #999;
+  line-height: 1.4545;
+  /* 16px */
+
+}
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+cite {
+  color: #999;
+  font-style: italic;
+}
+/* =============================================================================
+   END BLOCKQUOTES
+   ========================================================================== */
+/* =============================================================================
+   BEGIN ADDRESS
+   ========================================================================== */address {
+  font-style: italic;
+}
+/* =============================================================================
+   END ADDRESS
+   ========================================================================== */
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  border-top: 1px solid #ccc;
+  margin: 50px 0;
+}
+/* Corrects overflow displayed oddly in IE 9 */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* =============================================================================
+   BEGIN TABLES
+   ========================================================================== */table {
+  width: 100%;
+  background: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td {
+  padding: 8px;
+  vertical-align: middle;
+}
+th {
+  font-weight: bold;
+}
+/* =============================================================================
+   END TABLES
+   ========================================================================== */html {
+  height: 100%;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  height: 100%;
+  font: 15px/1.333 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* base line-height 20px */
+
+}
+/* Main layout */
+.container {
+  position: relative;
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+/* END Main layout */
+/* Menu */
+.menu {
+  position: fixed;
+  z-index: 100;
+  top: 100px;
+  left: 20px;
+  width: 20px;
+  padding: 5px;
+  background-color: #7F7F7F;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.menu__item {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  background-color: #fff;
+}
+.menu__item:first-child {
+  margin-top: 0;
+}
+.menu__item_active {
+  background-color: #FFE066;
+}
+.menu__item__desc {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  display: none;
+  padding: 2px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #FFE066;
+  font-size: 12px;
+  z-index: 100;
+}
+.menu__item:hover .menu__item__desc {
+  display: block;
+}
+/*END Menu */
+/* Go top link */
+.go-top {
+  position: fixed;
+  z-index: 100;
+  right: 20px;
+  bottom: 170px;
+  display: none;
+  text-decoration: none;
+  width: 62px;
+  height: 40px;
+  background: url(../img/go-top.png) no-repeat 0 0;
+  color: #9E7C04;
+}
+.go-top:hover {
+  background-position: 0 -41px;
+}
+.go-top__inner {
+  display: block;
+  font-size: 13px;
+  padding-top: 16px;
+  text-align: center;
+  text-shadow: 0 1px #fff;
+}
+/*END Go top link */
+/* Header */
+.header {
+  background-color: #fff;
+}
+.header__promo {
+  text-align: center;
+}
+.header__promo__text {
+  margin-bottom: 15px;
+  color: #333333;
+  font-size: 2.5em;
+  line-height: 1em;
+}
+.header__promo__subtext {
+  color: #999999;
+  font-size: 1.5em;
+}
+/*END  Header */
+/* Helper classes */
+.line {
+  margin-bottom: 10px;
+  padding: 0;
+}
+.line__text {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 5px;
+}
+.line__text_white {
+  background-color: rgba(255, 255, 255, 0.8);
+  filter: filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#CCFFFFFF', endColorstr='#CCFFFFFF');;
+}
+.line__text_lighter {
+  background-color: rgba(255, 255, 255, 0.4);
+  filter: filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#66FFFFFF', endColorstr='#66FFFFFF');;
+}
+.line__text_red {
+  background-color: #D82247;
+}
+.line__text_blue {
+  color: #fff;
+  background-color: #6CA3E9;
+}
+.line__text_yellow {
+  background-color: #FFE066;
+}
+.line__text_grey {
+  background-color: #E8E8E8;
+}
+.line__text_big {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+/* Yandex logo */
+.yandex-logo {
+  display: inline;
+  color: black;
+}
+.yandex-logo__first-letter {
+  color: #FF0000;
+}
+/*END  Yandex logo */
+/*END  Helper classes */
+/* Main info */
+.born-city {
+  height: 365px;
+  padding-top: 50px;
+  text-align: center;
+  background: url(../img/born-city.jpg) no-repeat top center;
+}
+.education {
+  font-size: 20px;
+}
+.born-city,
+.education {
+  background-color: #f4f4f4;
+}
+/*END Main info */
+/* About yandex school page */
+.yandex-school {
+  background-color: #FFCC00;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+  text-shadow: 0 1px 1px #FEED7E;
+  font-size: 18px;
+}
+.yandex-school__title {
+  color: #fff;
+  text-shadow: 0 0 2px #B29008;
+}
+.yandex-school__know {
+  font-size: 12px;
+}
+.yandex-school__pic {
+  margin: 50px 0;
+  text-align: center;
+}
+.yandex-school__pic__left,
+.yandex-school__pic__right {
+  width: 380px;
+  margin-bottom: 20px;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  border: 8px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+/*END  About yandex school page */
+/* Experience page */
+.experience {
+  padding: 30px 0;
+  background: url(../img/bg-work.jpg) repeat top left;
+}
+.experience__title {
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 0 0 2px #840E26;
+}
+.experience__item {
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 2px 2px 2px 2px;
+  box-shadow: 0 0 2px;
+}
+.experience__item__pic {
+  width: 100%;
+  max-width: 676px;
+}
+.experience__item_atlant {
+  background-color: #cbe3f5;
+  background-image: -moz-linear-gradient(bottom, #ffffff 0%, #e3ebed 32.06%, #ffffff 51.37%, #ffffff 78.27%, #cbe3f5 100%);
+  background-image: -o-linear-gradient(bottom, #ffffff 0%, #e3ebed 32.06%, #ffffff 51.37%, #ffffff 78.27%, #cbe3f5 100%);
+  background-image: -webkit-linear-gradient(bottom, #ffffff 0%, #e3ebed 32.06%, #ffffff 51.37%, #ffffff 78.27%, #cbe3f5 100%);
+  background-image: linear-gradient(bottom, #ffffff 0%, #e3ebed 32.06%, #ffffff 51.37%, #ffffff 78.27%, #cbe3f5 100%);
+}
+.experience__item_autoi {
+  background-color: #BDC3C6;
+  background-image: -moz-linear-gradient(top, #e2e6e7 25%, #bdc3c6 100%);
+  background-image: -o-linear-gradient(top, #e2e6e7 25%, #bdc3c6 100%);
+  background-image: -webkit-linear-gradient(top, #e2e6e7 25%, #bdc3c6 100%);
+  background-image: linear-gradient(top, #e2e6e7 25%, #bdc3c6 100%);
+}
+.experience__item_prokopiev {
+  background-color: #dcdcdc;
+  background-image: -moz-linear-gradient(top, #f4f4f4 0%, #dcdcdc 100%);
+  background-image: -o-linear-gradient(top, #eaeaea 0%, #dcdcdc 100%);
+  background-image: -webkit-linear-gradient(top, #eaeaea 0%, #dcdcdc 100%);
+  background-image: linear-gradient(top, #eaeaea 0%, #dcdcdc 100%);
+}
+.experience__item_unikids {
+  background-color: #67CCFA;
+  background-image: -moz-linear-gradient(top, #67ccfa 0%, #d1f1fc 100%);
+  background-image: -o-linear-gradient(top, #67ccfa 0%, #d1f1fc 100%);
+  background-image: -webkit-linear-gradient(top, #67ccfa 0%, #d1f1fc 100%);
+  background-image: linear-gradient(top, #67ccfa 0%, #d1f1fc 100%);
+}
+.experience__item__link {
+  display: block;
+  margin-bottom: 15px;
+  color: #000;
+}
+/*END  Experience page */
+/* Skills sector and pages */
+.skills__title {
+  margin-bottom: 30px;
+}
+.skills__item {
+  display: inline-block;
+  width: 30%;
+  margin-bottom: 20px;
+  padding-left: 3%;
+  text-align: center;
+  vertical-align: top;
+  min-width: 170px;
+}
+.skills__item__pic {
+  margin-bottom: 15px;
+}
+.ide__pic-wrapper {
+  display: inline-block;
+  max-width: 66%;
+}
+.ide__pic {
+  width: 100%;
+}
+.ide__text-wrapper {
+  display: inline-block;
+  width: 33%;
+  vertical-align: middle;
+}
+.ide__text {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.os__item {
+  margin-bottom: 20px;
+}
+.os__item__pic {
+  display: inline-block;
+  width: 150px;
+}
+.os__item__wrap-text {
+  display: inline-block;
+  width: 75%;
+  vertical-align: middle;
+}
+.os__item__text {
+  margin-left: 20px;
+}
+.svn__pic-wrapper {
+  text-align: justify;
+}
+.svn__pic-wrapper:after {
+  display: inline-block;
+  overflow: hidden;
+  height: 1px;
+  margin-left: 100%;
+  content: "1";
+}
+.task__pic-wrapper {
+  display: inline-block;
+  width: 63%;
+  max-width: 602px;
+}
+.task__pic {
+  width: 100%;
+}
+.task__text-wrapper {
+  display: inline-block;
+  width: 35%;
+  vertical-align: middle;
+}
+.task__text__list,
+.task__text {
+  margin-left: 20px;
+}
+/*END  Skills sector and pages */
+/* Resources page */
+.resources {
+  background: url(../img/bg-resources.jpg) repeat top left;
+}
+.resources__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.resources__item {
+  display: inline-block;
+  padding-left: 3%;
+  text-align: center;
+  vertical-align: top;
+  margin-bottom: 50px;
+  width: 45%;
+  min-width: 300px;
+}
+.resources__item__pic {
+  margin-bottom: 20px;
+}
+.resources__item__link {
+  display: block;
+  color: #FFE066 !important;
+}
+.resources__item__desc {
+  background: none repeat scroll 0 0 #FFF1BF;
+  margin: 15px 0 0;
+  padding: 10px;
+  border-radius: 1px;
+  position: relative;
+  box-shadow: 0 1px 3px #000;
+  height: 80px;
+  display: table;
+}
+.resources__item__desc__text {
+  display: table-cell;
+  vertical-align: middle;
+}
+/*END Resources page */
+/* Work */
+.work .container:after {
+  content: " ";
+  width: 313px;
+  height: 268px;
+  background: url(../img/society.png) no-repeat top left;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.work__desc {
+  margin-right: 300px;
+}
+/*END  Work */
+/* Contact */
+.contact {
+  height: 600px;
+}
+.contact__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.contact__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  text-align: center;
+  min-width: 100px;
+}
+/*END  Contact */
